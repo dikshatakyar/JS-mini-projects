@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(60, 167, 216);
+    color: bisque;
+    min-height:100vh;
+    font-size: 2rem;
+}
