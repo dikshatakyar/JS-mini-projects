@@ -1,0 +1,60 @@
+*{
+    box-sizing: content-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    transition: background 0.2s ease-in-out;
+}
+
+.label{
+    background-color:black;
+    border-radius: 50px;
+    width: 60px;
+    height: 26px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+}
+
+.fa-moon-o{
+    color: yellow;
+}
+
+.fa-sun-o{
+    color: orange;
+}
+
+
+.ball{
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    transition: transform 0.16s linear;
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+/* to get the value of checkbox */
+
+.checkbox:checked + .label .ball{
+    transform: translateX(40px);
+}
+
+body.dark{
+    background: black;
+    background-color: #292C35;
+    color:white;
+}
+
